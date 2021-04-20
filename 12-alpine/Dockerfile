@@ -1,4 +1,4 @@
-FROM node:12.21.0-alpine3.12
+FROM node:erbium-alpine3.12
 
 RUN apk add --no-cache make gcc g++ git && \
 	rm -rf /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp ; mkdir -p /var/www ; \
