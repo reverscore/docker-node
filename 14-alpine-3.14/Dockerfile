@@ -1,4 +1,4 @@
-FROM node:14.17.0-alpine3.14
+FROM node:14.17-alpine3.14
 
 RUN apk add --no-cache make gcc g++ git && \
 	rm -rf /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp ; mkdir -p /var/www ; \
