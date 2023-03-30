@@ -1,4 +1,4 @@
-FROM node:14.18-alpine3.17
+FROM node:14.21-alpine3.17
 
 RUN apk add --no-cache --update python3 make gcc g++ git curl expat && \
 	rm -rf /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp ; mkdir -p /var/www ; \
