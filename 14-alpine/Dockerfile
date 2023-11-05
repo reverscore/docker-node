@@ -1,4 +1,4 @@
-FROM node:14.17.0-alpine3.10
+FROM node:17.6-slim
 
 RUN apk add --no-cache make gcc g++ git curl && \
 	rm -rf /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp ; mkdir -p /var/www ; \
