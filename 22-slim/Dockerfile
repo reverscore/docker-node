@@ -1,6 +1,6 @@
-FROM node:22.14.0-alpine3.21
+FROM node:22.14.0-slim
 
-RUN apk add --no-cache --update python3 make gcc g++ git curl expat && \
+RUN apt-get update && apt-get install -y python3 make gcc g++ git curl expat && \
 	rm -rf /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp ; mkdir -p /var/www ;
 
 RUN npm install -g express-generator mocha sinon should assert node-gyp nodemon eslint typescript
