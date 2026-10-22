@@ -1,8 +1,10 @@
 # Node.js
 
-Tags available:
+Tags available are for node version + the base operating system:
 
-- alpine
-- debian
+Example:
+
+- 22-alpine
+- 24-debian
 
 There's no latest tag intentionally
